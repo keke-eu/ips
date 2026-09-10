@@ -6,20 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - xiaohe",
-        "🇲🇾 MY 02 - xiaohe",
-        "🇲🇾 MY 03 - xiaohe",
-        "🇲🇾 MY 04 - xiaohe"
+        "🇲🇾 MY 01 - kele",
+        "🇲🇾 MY 02 - kele",
+        "🇲🇾 MY 03 - kele",
+        "🇲🇾 MY 04 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - xiaohe",
-        "🇲🇾 MY 02 - xiaohe",
-        "🇲🇾 MY 03 - xiaohe",
-        "🇲🇾 MY 04 - xiaohe"
+        "🇲🇾 MY 01 - kele",
+        "🇲🇾 MY 02 - kele",
+        "🇲🇾 MY 03 - kele",
+        "🇲🇾 MY 04 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },

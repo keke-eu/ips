@@ -6,20 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 01 - kele",
+        "🇷🇺 俄罗斯 (Russia) 02 - kele",
+        "🇷🇺 俄罗斯 (Russia) 03 - kele",
+        "🇷🇺 俄罗斯 (Russia) 04 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 01 - kele",
+        "🇷🇺 俄罗斯 (Russia) 02 - kele",
+        "🇷🇺 俄罗斯 (Russia) 03 - kele",
+        "🇷🇺 俄罗斯 (Russia) 04 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },

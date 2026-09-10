@@ -6,26 +6,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 NO 01 - xiaohe",
-        "🇳🇴 NO 02 - xiaohe",
-        "🇳🇴 NO 03 - xiaohe",
-        "🇳🇴 NO 04 - xiaohe",
-        "🇳🇴 NO 05 - xiaohe",
-        "🇳🇴 NO 06 - xiaohe",
-        "🇳🇴 NO 07 - xiaohe"
+        "🇳🇴 NO 01 - kele",
+        "🇳🇴 NO 02 - kele",
+        "🇳🇴 NO 03 - kele",
+        "🇳🇴 NO 04 - kele",
+        "🇳🇴 NO 05 - kele",
+        "🇳🇴 NO 06 - kele",
+        "🇳🇴 NO 07 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 NO 01 - xiaohe",
-        "🇳🇴 NO 02 - xiaohe",
-        "🇳🇴 NO 03 - xiaohe",
-        "🇳🇴 NO 04 - xiaohe",
-        "🇳🇴 NO 05 - xiaohe",
-        "🇳🇴 NO 06 - xiaohe",
-        "🇳🇴 NO 07 - xiaohe"
+        "🇳🇴 NO 01 - kele",
+        "🇳🇴 NO 02 - kele",
+        "🇳🇴 NO 03 - kele",
+        "🇳🇴 NO 04 - kele",
+        "🇳🇴 NO 05 - kele",
+        "🇳🇴 NO 06 - kele",
+        "🇳🇴 NO 07 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },

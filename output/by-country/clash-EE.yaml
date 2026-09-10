@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - xiaohe
+- name: 🇪🇪 EE 01 - kele
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -13,7 +13,16 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 02 - xiaohe
+- name: 🇪🇪 EE 02 - kele
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 03 - kele
   type: vless
   server: 94.183.170.135
   port: 443
@@ -26,7 +35,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 03 - xiaohe
+- name: 🇪🇪 EE 04 - kele
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -35,25 +44,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 04 - xiaohe
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 05 - xiaohe
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 06 - xiaohe
+- name: 🇪🇪 EE 05 - kele
   type: vless
   server: 94.183.170.135
   port: 443
@@ -66,7 +57,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 07 - xiaohe
+- name: 🇪🇪 EE 06 - kele
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -75,7 +66,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 08 - xiaohe
+- name: 🇪🇪 EE 07 - kele
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -89,26 +80,24 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - xiaohe
-  - 🇪🇪 EE 02 - xiaohe
-  - 🇪🇪 EE 03 - xiaohe
-  - 🇪🇪 EE 04 - xiaohe
-  - 🇪🇪 EE 05 - xiaohe
-  - 🇪🇪 EE 06 - xiaohe
-  - 🇪🇪 EE 07 - xiaohe
-  - 🇪🇪 EE 08 - xiaohe
+  - 🇪🇪 EE 01 - kele
+  - 🇪🇪 EE 02 - kele
+  - 🇪🇪 EE 03 - kele
+  - 🇪🇪 EE 04 - kele
+  - 🇪🇪 EE 05 - kele
+  - 🇪🇪 EE 06 - kele
+  - 🇪🇪 EE 07 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - xiaohe
-  - 🇪🇪 EE 02 - xiaohe
-  - 🇪🇪 EE 03 - xiaohe
-  - 🇪🇪 EE 04 - xiaohe
-  - 🇪🇪 EE 05 - xiaohe
-  - 🇪🇪 EE 06 - xiaohe
-  - 🇪🇪 EE 07 - xiaohe
-  - 🇪🇪 EE 08 - xiaohe
+  - 🇪🇪 EE 01 - kele
+  - 🇪🇪 EE 02 - kele
+  - 🇪🇪 EE 03 - kele
+  - 🇪🇪 EE 04 - kele
+  - 🇪🇪 EE 05 - kele
+  - 🇪🇪 EE 06 - kele
+  - 🇪🇪 EE 07 - kele
 rules:
 - MATCH,PROXIES
