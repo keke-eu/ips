@@ -6,16 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR 01 - kele",
-        "🇧🇷 BR 02 - kele"
+        "🇦🇪 阿联酋 (UAE) 01 - kele",
+        "🇦🇪 阿联酋 (UAE) 02 - kele",
+        "🇦🇪 阿联酋 (UAE) 03 - kele",
+        "🇦🇪 阿联酋 (UAE) 04 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR 01 - kele",
-        "🇧🇷 BR 02 - kele"
+        "🇦🇪 阿联酋 (UAE) 01 - kele",
+        "🇦🇪 阿联酋 (UAE) 02 - kele",
+        "🇦🇪 阿联酋 (UAE) 03 - kele",
+        "🇦🇪 阿联酋 (UAE) 04 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -5,25 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - kele
-  type: ss
-  server: 146.235.19.129
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: i699dvro3+yyb9U6o3qsojnoZw2MsymfU8jhW6SzVLg=
+  type: vless
+  server: 142.91.102.35
+  port: 443
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8.sahanwickramasinghe.me
 - name: 🇸🇬 新加坡 (Singapore) 02 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 03 - kele
   type: vmess
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -33,7 +33,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 04 - kele
   type: vmess
-  server: 149.88.23.202
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -43,7 +43,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 05 - kele
   type: vmess
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -53,7 +53,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 06 - kele
   type: vmess
-  server: 149.88.23.202
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -63,10 +63,10 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 07 - kele
   type: ss
-  server: 176.97.64.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: TFElG2FVqyqG
+  server: 146.235.19.129
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: i699dvro3+yyb9U6o3qsojnoZw2MsymfU8jhW6SzVLg=
   udp: true
 - name: 🇸🇬 新加坡 (Singapore) 08 - kele
   type: vmess
@@ -79,14 +79,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 09 - kele
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 10 - kele
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -96,15 +88,23 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - kele
-  type: vless
-  server: 142.91.102.35
-  port: 443
-  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+- name: 🇸🇬 新加坡 (Singapore) 10 - kele
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 8.sahanwickramasinghe.me
+- name: 🇸🇬 新加坡 (Singapore) 11 - kele
+  type: ss
+  server: 176.97.64.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: TFElG2FVqyqG
+  udp: true
 - name: 🇸🇬 新加坡 (Singapore) 12 - kele
   type: vmess
   server: 149.88.23.202
@@ -116,15 +116,17 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 13 - kele
-  type: ss
-  server: 176.97.64.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: TFElG2FVqyqG
+  type: vless
+  server: 142.91.102.35
+  port: 443
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.tiktok.com
 - name: 🇸🇬 新加坡 (Singapore) 14 - kele
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -143,6 +145,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 16 - kele
+  type: ss
+  server: 176.97.64.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: TFElG2FVqyqG
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 17 - kele
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -152,26 +161,15 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 17 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 18 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 8.sahanwickramasinghe.me
+  port: 443
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: www.tiktok.com
 - name: 🇸🇬 新加坡 (Singapore) 19 - kele
   type: vmess
   server: 149.88.23.207
@@ -183,98 +181,20 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 20 - kele
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 21 - kele
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 22 - kele
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 23 - kele
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 24 - kele
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 25 - kele
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 26 - kele
   type: vless
   server: 134.122.154.210
   port: 443
   uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 27 - kele
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 28 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 29 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -304,14 +224,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 19 - kele
   - 🇸🇬 新加坡 (Singapore) 20 - kele
   - 🇸🇬 新加坡 (Singapore) 21 - kele
-  - 🇸🇬 新加坡 (Singapore) 22 - kele
-  - 🇸🇬 新加坡 (Singapore) 23 - kele
-  - 🇸🇬 新加坡 (Singapore) 24 - kele
-  - 🇸🇬 新加坡 (Singapore) 25 - kele
-  - 🇸🇬 新加坡 (Singapore) 26 - kele
-  - 🇸🇬 新加坡 (Singapore) 27 - kele
-  - 🇸🇬 新加坡 (Singapore) 28 - kele
-  - 🇸🇬 新加坡 (Singapore) 29 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -338,13 +250,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 19 - kele
   - 🇸🇬 新加坡 (Singapore) 20 - kele
   - 🇸🇬 新加坡 (Singapore) 21 - kele
-  - 🇸🇬 新加坡 (Singapore) 22 - kele
-  - 🇸🇬 新加坡 (Singapore) 23 - kele
-  - 🇸🇬 新加坡 (Singapore) 24 - kele
-  - 🇸🇬 新加坡 (Singapore) 25 - kele
-  - 🇸🇬 新加坡 (Singapore) 26 - kele
-  - 🇸🇬 新加坡 (Singapore) 27 - kele
-  - 🇸🇬 新加坡 (Singapore) 28 - kele
-  - 🇸🇬 新加坡 (Singapore) 29 - kele
 rules:
 - MATCH,PROXIES
