@@ -6,36 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - kele",
-        "🇸🇨 SC 02 - kele",
-        "🇸🇨 SC 03 - kele",
-        "🇸🇨 SC 04 - kele",
-        "🇸🇨 SC 05 - kele",
-        "🇸🇨 SC 06 - kele",
-        "🇸🇨 SC 07 - kele",
-        "🇸🇨 SC 08 - kele",
-        "🇸🇨 SC 09 - kele",
-        "🇸🇨 SC 10 - kele",
-        "🇸🇨 SC 11 - kele",
-        "🇸🇨 SC 12 - kele"
+        "🇸🇨 SC 01 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - kele",
-        "🇸🇨 SC 02 - kele",
-        "🇸🇨 SC 03 - kele",
-        "🇸🇨 SC 04 - kele",
-        "🇸🇨 SC 05 - kele",
-        "🇸🇨 SC 06 - kele",
-        "🇸🇨 SC 07 - kele",
-        "🇸🇨 SC 08 - kele",
-        "🇸🇨 SC 09 - kele",
-        "🇸🇨 SC 10 - kele",
-        "🇸🇨 SC 11 - kele",
-        "🇸🇨 SC 12 - kele"
+        "🇸🇨 SC 01 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },

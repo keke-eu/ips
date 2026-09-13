@@ -6,24 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 UZ 01 - kele",
-        "🇺🇿 UZ 02 - kele",
-        "🇺🇿 UZ 03 - kele",
-        "🇺🇿 UZ 04 - kele",
-        "🇺🇿 UZ 05 - kele",
-        "🇺🇿 UZ 06 - kele"
+        "🇺🇿 UZ 01 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 UZ 01 - kele",
-        "🇺🇿 UZ 02 - kele",
-        "🇺🇿 UZ 03 - kele",
-        "🇺🇿 UZ 04 - kele",
-        "🇺🇿 UZ 05 - kele",
-        "🇺🇿 UZ 06 - kele"
+        "🇺🇿 UZ 01 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },
