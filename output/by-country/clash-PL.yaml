@@ -18,13 +18,6 @@ proxies:
     headers:
       Host: 178.95.170.98
 - name: 🇵🇱 PL 02 - kele
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
-  udp: true
-- name: 🇵🇱 PL 03 - kele
   type: vless
   server: 94.183.209.59
   port: 443
@@ -37,6 +30,13 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
+- name: 🇵🇱 PL 03 - kele
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+  udp: true
 - name: 🇵🇱 PL 04 - kele
   type: vless
   server: 94.183.209.58
@@ -50,45 +50,6 @@ proxies:
     path: /
     headers:
       Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 05 - kele
-  type: vless
-  server: 94.183.209.59
-  port: 443
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.209.59
-- name: 🇵🇱 PL 06 - kele
-  type: vless
-  server: 94.183.209.58
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 07 - kele
-  type: vless
-  server: 94.183.209.58
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.209.58
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,9 +59,6 @@ proxy-groups:
   - 🇵🇱 PL 02 - kele
   - 🇵🇱 PL 03 - kele
   - 🇵🇱 PL 04 - kele
-  - 🇵🇱 PL 05 - kele
-  - 🇵🇱 PL 06 - kele
-  - 🇵🇱 PL 07 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -110,8 +68,5 @@ proxy-groups:
   - 🇵🇱 PL 02 - kele
   - 🇵🇱 PL 03 - kele
   - 🇵🇱 PL 04 - kele
-  - 🇵🇱 PL 05 - kele
-  - 🇵🇱 PL 06 - kele
-  - 🇵🇱 PL 07 - kele
 rules:
 - MATCH,PROXIES
