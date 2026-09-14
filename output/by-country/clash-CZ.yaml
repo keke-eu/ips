@@ -1,0 +1,49 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 CZ 01 - kele
+  type: vless
+  server: skk.moe
+  port: 8880
+  uuid: 25322a43-4ef3-45cc-9e96-db44bcccd7be
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: purple-disk-f68d.14-360.workers.dev
+- name: 🇨🇿 CZ 02 - kele
+  type: vless
+  server: 172.64.80.1
+  port: 443
+  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: summer-meadow-af5b.woowoorrrkk.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 CZ 01 - kele
+  - 🇨🇿 CZ 02 - kele
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 CZ 01 - kele
+  - 🇨🇿 CZ 02 - kele
+rules:
+- MATCH,PROXIES
