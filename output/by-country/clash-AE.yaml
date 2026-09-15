@@ -19,29 +19,29 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - kele
   type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  server: 31.58.181.88
+  port: 8443
+  uuid: d5f1aa27-43d0-4f2e-bca2-140f3ec2aa62
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 03 - kele
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /snob-ws
+    path: /
     headers:
-      Host: cdn.snobvpn.online
-- name: 🇦🇪 阿联酋 (UAE) 03 - kele
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: firefox
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - kele
   type: vless
   server: 84.235.244.108
@@ -57,6 +57,31 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - kele
   type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 1423f399-74d3-4d99-90b9-bc7cae1af706
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 06 - kele
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - kele
+  type: vless
   server: 89.125.147.199
   port: 443
   uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
@@ -67,6 +92,57 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
   client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 08 - kele
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - kele
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 10 - kele
+  type: vless
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 11 - kele
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: shrill-recipe-0c1d.404-a1d.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +153,12 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - kele
   - 🇦🇪 阿联酋 (UAE) 04 - kele
   - 🇦🇪 阿联酋 (UAE) 05 - kele
+  - 🇦🇪 阿联酋 (UAE) 06 - kele
+  - 🇦🇪 阿联酋 (UAE) 07 - kele
+  - 🇦🇪 阿联酋 (UAE) 08 - kele
+  - 🇦🇪 阿联酋 (UAE) 09 - kele
+  - 🇦🇪 阿联酋 (UAE) 10 - kele
+  - 🇦🇪 阿联酋 (UAE) 11 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,5 +169,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - kele
   - 🇦🇪 阿联酋 (UAE) 04 - kele
   - 🇦🇪 阿联酋 (UAE) 05 - kele
+  - 🇦🇪 阿联酋 (UAE) 06 - kele
+  - 🇦🇪 阿联酋 (UAE) 07 - kele
+  - 🇦🇪 阿联酋 (UAE) 08 - kele
+  - 🇦🇪 阿联酋 (UAE) 09 - kele
+  - 🇦🇪 阿联酋 (UAE) 10 - kele
+  - 🇦🇪 阿联酋 (UAE) 11 - kele
 rules:
 - MATCH,PROXIES
