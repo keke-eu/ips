@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - kele",
-        "🇹🇷 土耳其 (Turkey) 02 - kele"
+        "🇦🇲 AM 01 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - kele",
-        "🇹🇷 土耳其 (Turkey) 02 - kele"
+        "🇦🇲 AM 01 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },
