@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - kele
   type: ss
-  server: 139.84.247.164
-  port: 8388
+  server: 102.37.156.224
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
+  password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
 - name: 🇿🇦 ZA 02 - kele
   type: ss
@@ -20,24 +20,10 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 03 - kele
   type: ss
-  server: 102.37.156.224
-  port: 443
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 🇿🇦 ZA 04 - kele
-  type: ss
-  server: 20.87.3.84
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: w0Yff67jxd3zXY9g
-  udp: true
-- name: 🇿🇦 ZA 05 - kele
-  type: ss
-  server: 20.87.3.84
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: w0Yff67jxd3zXY9g
+  password: tfAcRikawhNoZAhu
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -47,8 +33,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - kele
   - 🇿🇦 ZA 02 - kele
   - 🇿🇦 ZA 03 - kele
-  - 🇿🇦 ZA 04 - kele
-  - 🇿🇦 ZA 05 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,7 +41,5 @@ proxy-groups:
   - 🇿🇦 ZA 01 - kele
   - 🇿🇦 ZA 02 - kele
   - 🇿🇦 ZA 03 - kele
-  - 🇿🇦 ZA 04 - kele
-  - 🇿🇦 ZA 05 - kele
 rules:
 - MATCH,PROXIES
