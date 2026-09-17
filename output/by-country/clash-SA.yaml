@@ -6,30 +6,158 @@ log-level: info
 proxies:
 - name: 🇸🇦 SA 01 - kele
   type: vless
-  server: 81.208.170.142
-  port: 1500
-  uuid: e332f028-d343-5b44-8016-b3130f39e133
+  server: 91.209.253.25
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
-  servername: www.ebay.com
-  client-fingerprint: chrome
-- name: 🇸🇦 SA 02 - kele
-  type: vless
-  server: 129.151.64.169
-  port: 31867
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /files
+    path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 02 - kele
+  type: vless
+  server: 91.209.253.250
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 03 - kele
+  type: vless
+  server: 91.209.253.229
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 04 - kele
+  type: vless
+  server: 91.209.253.109
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 05 - kele
+  type: vless
+  server: 91.209.253.68
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 06 - kele
+  type: vless
+  server: 91.209.253.119
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 07 - kele
+  type: vless
+  server: 91.209.253.244
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 08 - kele
+  type: vless
+  server: 91.209.253.243
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 09 - kele
+  type: vless
+  server: 91.209.253.216
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 10 - kele
+  type: vless
+  server: 91.209.253.42
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 11 - kele
+  type: vless
+  server: 91.209.253.109
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +165,15 @@ proxy-groups:
   - AUTO
   - 🇸🇦 SA 01 - kele
   - 🇸🇦 SA 02 - kele
+  - 🇸🇦 SA 03 - kele
+  - 🇸🇦 SA 04 - kele
+  - 🇸🇦 SA 05 - kele
+  - 🇸🇦 SA 06 - kele
+  - 🇸🇦 SA 07 - kele
+  - 🇸🇦 SA 08 - kele
+  - 🇸🇦 SA 09 - kele
+  - 🇸🇦 SA 10 - kele
+  - 🇸🇦 SA 11 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +181,14 @@ proxy-groups:
   proxies:
   - 🇸🇦 SA 01 - kele
   - 🇸🇦 SA 02 - kele
+  - 🇸🇦 SA 03 - kele
+  - 🇸🇦 SA 04 - kele
+  - 🇸🇦 SA 05 - kele
+  - 🇸🇦 SA 06 - kele
+  - 🇸🇦 SA 07 - kele
+  - 🇸🇦 SA 08 - kele
+  - 🇸🇦 SA 09 - kele
+  - 🇸🇦 SA 10 - kele
+  - 🇸🇦 SA 11 - kele
 rules:
 - MATCH,PROXIES

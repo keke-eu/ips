@@ -6,32 +6,28 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - kele
   type: vless
-  server: 172.67.174.249
-  port: 443
-  uuid: 26b35808-f1e1-4b97-8c69-46796f058d8b
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ezaccess-project-9138d4.5f6on.workers.dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoicG9pMkt4TDY2TVNtRSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: ezaccess-project-9138d4.5f6on.workers.dev
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 02 - kele
   type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 03 - kele
   type: vless
   server: 149.202.58.99
@@ -47,19 +43,22 @@ proxies:
     headers:
       Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 04 - kele
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 05 - kele
   type: vless
-  server: 149.202.58.99
+  server: 81.95.4.189
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
@@ -73,7 +72,7 @@ proxies:
       Host: bab-6.site
 - name: 🇫🇷 法国 (France) 06 - kele
   type: vless
-  server: 81.95.4.189
+  server: 149.202.58.99
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
