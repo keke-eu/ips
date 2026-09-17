@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 TH 01 - kele"
+        "🇹🇭 TH 01 - kele",
+        "🇹🇭 TH 02 - kele",
+        "🇹🇭 TH 03 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 TH 01 - kele"
+        "🇹🇭 TH 01 - kele",
+        "🇹🇭 TH 02 - kele",
+        "🇹🇭 TH 03 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },
