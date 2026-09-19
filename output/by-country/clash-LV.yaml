@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 BE 01 - kele
+- name: 🇱🇻 LV 01 - kele
   type: vless
-  server: 35.195.122.169
-  port: 443
-  uuid: e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254
+  server: atomic-prase23893.my-vm.work
+  port: 8088
+  uuid: f7c74a35-1da0-5097-9fa7-a20735610ac1
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api
+    headers:
+      Host: queuev4.vk.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 BE 01 - kele
+  - 🇱🇻 LV 01 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 BE 01 - kele
+  - 🇱🇻 LV 01 - kele
 rules:
 - MATCH,PROXIES

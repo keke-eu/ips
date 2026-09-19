@@ -6,24 +6,17 @@ log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - kele
   type: vless
-  server: 34.95.28.161
-  port: 443
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 02 - kele
-  type: ss
-  server: 51.79.49.116
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 03 - kele
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -34,10 +27,19 @@ proxies:
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 03 - kele
+  type: vless
+  server: 184.107.106.68
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
 - name: 🇨🇦 加拿大 (Canada) 04 - kele
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -57,22 +59,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 06 - kele
   type: vmess
-  server: 23.162.200.227
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇨🇦 加拿大 (Canada) 07 - kele
-  type: vmess
   server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
@@ -81,16 +67,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 08 - kele
-  type: vless
-  server: 184.107.106.68
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+- name: 🇨🇦 加拿大 (Canada) 07 - kele
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 09 - kele
+- name: 🇨🇦 加拿大 (Canada) 08 - kele
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -100,13 +84,26 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 10 - kele
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+- name: 🇨🇦 加拿大 (Canada) 09 - kele
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 10 - kele
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 11 - kele
   type: vmess
   server: 23.162.200.198
@@ -118,6 +115,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 12 - kele
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 13 - kele
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -128,14 +132,7 @@ proxies:
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 13 - kele
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 14 - kele
   type: ss
   server: yyz-ca-01.blncvpn4u.cc
@@ -144,20 +141,18 @@ proxies:
   password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
   udp: true
 - name: 🇨🇦 加拿大 (Canada) 15 - kele
-  type: vless
-  server: 34.95.28.161
-  port: 443
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 16 - kele
   type: vmess
   server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 16 - kele
+  type: vmess
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -166,92 +161,23 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 17 - kele
-  type: vless
-  server: 34.95.28.161
+  type: ss
+  server: 149.22.95.183
   port: 443
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 18 - kele
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 19 - kele
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 20 - kele
-  type: vless
-  server: 184.107.106.68
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 21 - kele
-  type: vless
-  server: lizca2.footballfantasyforum.com
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 22 - kele
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 23 - kele
-  type: vless
-  server: 34.95.28.161
-  port: 443
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇨🇦 加拿大 (Canada) 24 - kele
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 25 - kele
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -261,30 +187,25 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 26 - kele
+- name: 🇨🇦 加拿大 (Canada) 20 - kele
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 21 - kele
   type: vless
-  server: 34.95.28.161
+  server: 184.107.106.68
   port: 443
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 27 - kele
-  type: vless
-  server: 34.95.28.161
-  port: 443
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-  servername: www.cloudflare.com
-  client-fingerprint: qq
+  servername: lizca2.footballfantasyforum.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -311,12 +232,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 19 - kele
   - 🇨🇦 加拿大 (Canada) 20 - kele
   - 🇨🇦 加拿大 (Canada) 21 - kele
-  - 🇨🇦 加拿大 (Canada) 22 - kele
-  - 🇨🇦 加拿大 (Canada) 23 - kele
-  - 🇨🇦 加拿大 (Canada) 24 - kele
-  - 🇨🇦 加拿大 (Canada) 25 - kele
-  - 🇨🇦 加拿大 (Canada) 26 - kele
-  - 🇨🇦 加拿大 (Canada) 27 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -343,11 +258,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 19 - kele
   - 🇨🇦 加拿大 (Canada) 20 - kele
   - 🇨🇦 加拿大 (Canada) 21 - kele
-  - 🇨🇦 加拿大 (Canada) 22 - kele
-  - 🇨🇦 加拿大 (Canada) 23 - kele
-  - 🇨🇦 加拿大 (Canada) 24 - kele
-  - 🇨🇦 加拿大 (Canada) 25 - kele
-  - 🇨🇦 加拿大 (Canada) 26 - kele
-  - 🇨🇦 加拿大 (Canada) 27 - kele
 rules:
 - MATCH,PROXIES
