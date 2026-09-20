@@ -4,23 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 SE 01 - kele
+- name: 🇮🇷 IR 01 - kele
   type: vless
-  server: 143.246.195.98
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless-test
-    headers:
-      Host: 143.246.195.98
-- name: 🇸🇪 SE 02 - kele
-  type: vless
-  server: 193.181.216.117
-  port: 2053
+  server: 103.251.167.112
+  port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -28,7 +15,7 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /library/lang?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
@@ -36,14 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 SE 01 - kele
-  - 🇸🇪 SE 02 - kele
+  - 🇮🇷 IR 01 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 SE 01 - kele
-  - 🇸🇪 SE 02 - kele
+  - 🇮🇷 IR 01 - kele
 rules:
 - MATCH,PROXIES
