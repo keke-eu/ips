@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - kele"
+        "🇺🇸 美国 (United States) 01 (家宽) - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - kele"
+        "🇺🇸 美国 (United States) 01 (家宽) - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },
