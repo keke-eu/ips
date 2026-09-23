@@ -33,14 +33,6 @@ proxies:
     path: /RoBeRt
     headers:
       Host: milan.adaspoloandco.com
-- name: 🇮🇹 意大利 (Italy) 04 - kele
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +41,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - kele
   - 🇮🇹 意大利 (Italy) 02 - kele
   - 🇮🇹 意大利 (Italy) 03 - kele
-  - 🇮🇹 意大利 (Italy) 04 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +49,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - kele
   - 🇮🇹 意大利 (Italy) 02 - kele
   - 🇮🇹 意大利 (Italy) 03 - kele
-  - 🇮🇹 意大利 (Italy) 04 - kele
 rules:
 - MATCH,PROXIES
