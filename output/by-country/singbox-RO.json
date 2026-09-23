@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - kele"
+        "🇷🇴 RO 01 - kele",
+        "🇷🇴 RO 02 - kele",
+        "🇷🇴 RO 03 - kele",
+        "🇷🇴 RO 04 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - kele"
+        "🇷🇴 RO 01 - kele",
+        "🇷🇴 RO 02 - kele",
+        "🇷🇴 RO 03 - kele",
+        "🇷🇴 RO 04 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },
