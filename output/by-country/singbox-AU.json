@@ -6,40 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - kele",
-        "🇦🇺 澳大利亚 (Australia) 02 - kele",
-        "🇦🇺 澳大利亚 (Australia) 03 - kele",
-        "🇦🇺 澳大利亚 (Australia) 04 - kele",
-        "🇦🇺 澳大利亚 (Australia) 05 - kele",
-        "🇦🇺 澳大利亚 (Australia) 06 - kele",
-        "🇦🇺 澳大利亚 (Australia) 07 - kele",
-        "🇦🇺 澳大利亚 (Australia) 08 - kele",
-        "🇦🇺 澳大利亚 (Australia) 09 - kele",
-        "🇦🇺 澳大利亚 (Australia) 10 - kele",
-        "🇦🇺 澳大利亚 (Australia) 11 - kele",
-        "🇦🇺 澳大利亚 (Australia) 12 - kele",
-        "🇦🇺 澳大利亚 (Australia) 13 - kele",
-        "🇦🇺 澳大利亚 (Australia) 14 - kele"
+        "🇦🇺 澳大利亚 (Australia) 01 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - kele",
-        "🇦🇺 澳大利亚 (Australia) 02 - kele",
-        "🇦🇺 澳大利亚 (Australia) 03 - kele",
-        "🇦🇺 澳大利亚 (Australia) 04 - kele",
-        "🇦🇺 澳大利亚 (Australia) 05 - kele",
-        "🇦🇺 澳大利亚 (Australia) 06 - kele",
-        "🇦🇺 澳大利亚 (Australia) 07 - kele",
-        "🇦🇺 澳大利亚 (Australia) 08 - kele",
-        "🇦🇺 澳大利亚 (Australia) 09 - kele",
-        "🇦🇺 澳大利亚 (Australia) 10 - kele",
-        "🇦🇺 澳大利亚 (Australia) 11 - kele",
-        "🇦🇺 澳大利亚 (Australia) 12 - kele",
-        "🇦🇺 澳大利亚 (Australia) 13 - kele",
-        "🇦🇺 澳大利亚 (Australia) 14 - kele"
+        "🇦🇺 澳大利亚 (Australia) 01 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },
