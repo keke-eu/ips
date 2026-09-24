@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - kele"
+        "🇨🇾 CY 01 - kele",
+        "🇨🇾 CY 02 - kele",
+        "🇨🇾 CY 03 - kele",
+        "🇨🇾 CY 04 - kele",
+        "🇨🇾 CY 05 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - kele"
+        "🇨🇾 CY 01 - kele",
+        "🇨🇾 CY 02 - kele",
+        "🇨🇾 CY 03 - kele",
+        "🇨🇾 CY 04 - kele",
+        "🇨🇾 CY 05 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },
