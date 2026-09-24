@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - kele
   type: vless
+  server: 91.193.58.15
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 02 - kele
+  type: vless
   server: 217.217.254.126
   port: 2053
   uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
@@ -15,14 +29,7 @@ proxies:
   reality-opts:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 02 - kele
-  type: ss
-  server: 158.178.229.235
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4nphreJpAUpxvkVQmO2l37kEup8qRu7pcSYU0JbJLVM=
-  udp: true
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 03 - kele
   type: vmess
   server: 149.88.23.207
@@ -44,70 +51,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 05 - kele
-  type: vless
-  server: 43.160.241.174
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia11.pages.dev
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia11.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 06 - kele
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 07 - kele
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 08 - kele
-  type: vless
-  server: 91.193.58.15
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 09 - kele
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 10 - kele
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -117,7 +60,15 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - kele
+- name: 🇸🇬 新加坡 (Singapore) 06 - kele
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 07 - kele
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -130,6 +81,45 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 08 - kele
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 09 - kele
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 10 - kele
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 11 - kele
+  type: ss
+  server: 158.178.229.235
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4nphreJpAUpxvkVQmO2l37kEup8qRu7pcSYU0JbJLVM=
+  udp: true
 - name: 🇸🇬 新加坡 (Singapore) 12 - kele
   type: vless
   server: 217.217.254.126
@@ -143,6 +133,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 13 - kele
+  type: ss
+  server: 168.107.84.176
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: zfRw8qHR5DsiUSSiFqxRnNjXZ0/oOyLeNKOqv5VW0PM=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 14 - kele
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -154,7 +151,29 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 14 - kele
+- name: 🇸🇬 新加坡 (Singapore) 15 - kele
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 16 - kele
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 17 - kele
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -164,30 +183,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 15 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 16 - kele
-  type: ss
-  server: ehwn62tnx5g8.cdn000.com
-  port: 30401
-  cipher: 2022-blake3-aes-128-gcm
-  password: Y2FkNzhhZWQ0MzA1NzlhZA==:NGMxZWEyZDMtZjBiMS00Yw==
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 17 - kele
-  type: ss
-  server: 134.185.94.195
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 1YhAjbJV6i0trZIzLbwZPAvUcxOuDwYr8rBmfSC/5+g=
-  udp: true
 - name: 🇸🇬 新加坡 (Singapore) 18 - kele
   type: vless
   server: 91.193.58.108
@@ -203,20 +198,6 @@ proxies:
     headers:
       Host: free-server.techsonic.dev
 - name: 🇸🇬 新加坡 (Singapore) 19 - kele
-  type: vless
-  server: 43.160.241.174
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia11.pages.dev
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia11.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 20 - kele
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -226,33 +207,18 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 21 - kele
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 20 - kele
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 22 - kele
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 23 - kele
-  type: ss
-  server: 161.118.222.185
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: CCfsnvFZe4t1K0KIgQDv7syWOwYGtqCTS6zwlKWr+J8=
-  udp: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -278,9 +244,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 18 - kele
   - 🇸🇬 新加坡 (Singapore) 19 - kele
   - 🇸🇬 新加坡 (Singapore) 20 - kele
-  - 🇸🇬 新加坡 (Singapore) 21 - kele
-  - 🇸🇬 新加坡 (Singapore) 22 - kele
-  - 🇸🇬 新加坡 (Singapore) 23 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -306,8 +269,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 18 - kele
   - 🇸🇬 新加坡 (Singapore) 19 - kele
   - 🇸🇬 新加坡 (Singapore) 20 - kele
-  - 🇸🇬 新加坡 (Singapore) 21 - kele
-  - 🇸🇬 新加坡 (Singapore) 22 - kele
-  - 🇸🇬 新加坡 (Singapore) 23 - kele
 rules:
 - MATCH,PROXIES
