@@ -7,6 +7,87 @@ proxies:
 - name: 🇪🇪 EE 01 - kele
   type: vless
   server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 02 - kele
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 03 - kele
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 04 - kele
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 05 - kele
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 06 - kele
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 07 - kele
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 08 - kele
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 09 - kele
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 10 - kele
+  type: vless
+  server: 94.183.170.135
   port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
@@ -23,11 +104,29 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇪 EE 01 - kele
+  - 🇪🇪 EE 02 - kele
+  - 🇪🇪 EE 03 - kele
+  - 🇪🇪 EE 04 - kele
+  - 🇪🇪 EE 05 - kele
+  - 🇪🇪 EE 06 - kele
+  - 🇪🇪 EE 07 - kele
+  - 🇪🇪 EE 08 - kele
+  - 🇪🇪 EE 09 - kele
+  - 🇪🇪 EE 10 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 EE 01 - kele
+  - 🇪🇪 EE 02 - kele
+  - 🇪🇪 EE 03 - kele
+  - 🇪🇪 EE 04 - kele
+  - 🇪🇪 EE 05 - kele
+  - 🇪🇪 EE 06 - kele
+  - 🇪🇪 EE 07 - kele
+  - 🇪🇪 EE 08 - kele
+  - 🇪🇪 EE 09 - kele
+  - 🇪🇪 EE 10 - kele
 rules:
 - MATCH,PROXIES
