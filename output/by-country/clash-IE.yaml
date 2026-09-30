@@ -6,6 +6,90 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - kele
   type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 02 - kele
+  type: vless
+  server: 188.114.97.7
+  port: 2083
+  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shy-fog-af06.alvlirm333.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shy-fog-af06.alvlirm333.workers.dev
+- name: 🇮🇪 IE 03 - kele
+  type: vless
+  server: 172.67.142.169
+  port: 443
+  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: youxuanku.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: youxuanku.kdns.fr
+- name: 🇮🇪 IE 04 - kele
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 05 - kele
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇮🇪 IE 06 - kele
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /?
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 07 - kele
+  type: vless
   server: 45.141.234.138
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -18,17 +102,125 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 08 - kele
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇮🇪 IE 09 - kele
+  type: vless
+  server: 172.67.222.62
+  port: 443
+  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf-vless-4cf55824.aimall.fr
+  network: ws
+  ws-opts:
+    path: /connect
+    headers:
+      Host: cf-vless-4cf55824.aimall.fr
+- name: 🇮🇪 IE 10 - kele
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 11 - kele
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇪 IE 12 - kele
+  type: vless
+  server: pruritus.patiromer.workers.dev
+  port: 443
+  uuid: 0659eac3-137b-4002-ba2e-88da4d071235
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pruritus.patiromer.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pruritus.patiromer.workers.dev
+- name: 🇮🇪 IE 13 - kele
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - kele
+  - 🇮🇪 IE 02 - kele
+  - 🇮🇪 IE 03 - kele
+  - 🇮🇪 IE 04 - kele
+  - 🇮🇪 IE 05 - kele
+  - 🇮🇪 IE 06 - kele
+  - 🇮🇪 IE 07 - kele
+  - 🇮🇪 IE 08 - kele
+  - 🇮🇪 IE 09 - kele
+  - 🇮🇪 IE 10 - kele
+  - 🇮🇪 IE 11 - kele
+  - 🇮🇪 IE 12 - kele
+  - 🇮🇪 IE 13 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - kele
+  - 🇮🇪 IE 02 - kele
+  - 🇮🇪 IE 03 - kele
+  - 🇮🇪 IE 04 - kele
+  - 🇮🇪 IE 05 - kele
+  - 🇮🇪 IE 06 - kele
+  - 🇮🇪 IE 07 - kele
+  - 🇮🇪 IE 08 - kele
+  - 🇮🇪 IE 09 - kele
+  - 🇮🇪 IE 10 - kele
+  - 🇮🇪 IE 11 - kele
+  - 🇮🇪 IE 12 - kele
+  - 🇮🇪 IE 13 - kele
 rules:
 - MATCH,PROXIES

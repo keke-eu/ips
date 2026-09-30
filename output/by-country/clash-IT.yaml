@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - kele
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 02 - kele
   type: vless
   server: 204.216.216.23
@@ -21,6 +20,38 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 03 - kele
+  type: vmess
+  server: 89.41.172.85
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 04 - kele
+  type: vless
+  server: 104.21.55.18
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇮🇹 意大利 (Italy) 05 - kele
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 06 - kele
   type: vless
   server: 57.131.21.102
   port: 8443
@@ -34,27 +65,56 @@ proxies:
     path: /RoBeRt
     headers:
       Host: milan.adaspoloandco.com
-- name: 🇮🇹 意大利 (Italy) 04 - kele
+- name: 🇮🇹 意大利 (Italy) 07 - kele
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 08 - kele
   type: ss
   server: 185.164.175.81
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 (Italy) 05 - kele
+- name: 🇮🇹 意大利 (Italy) 09 - kele
+  type: vless
+  server: 172.67.214.192
+  port: 443
+  uuid: 0659eac3-137b-4002-ba2e-88da4d071235
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pruritus.patiromer.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pruritus.patiromer.workers.dev
+- name: 🇮🇹 意大利 (Italy) 10 - kele
   type: ss
   server: 57.131.48.45
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
   udp: true
-- name: 🇮🇹 意大利 (Italy) 06 - kele
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
+- name: 🇮🇹 意大利 (Italy) 11 - kele
+  type: vless
+  server: 172.67.214.192
+  port: 443
+  uuid: 0659eac3-137b-4002-ba2e-88da4d071235
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pruritus.patiromer.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pruritus.patiromer.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +126,11 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - kele
   - 🇮🇹 意大利 (Italy) 05 - kele
   - 🇮🇹 意大利 (Italy) 06 - kele
+  - 🇮🇹 意大利 (Italy) 07 - kele
+  - 🇮🇹 意大利 (Italy) 08 - kele
+  - 🇮🇹 意大利 (Italy) 09 - kele
+  - 🇮🇹 意大利 (Italy) 10 - kele
+  - 🇮🇹 意大利 (Italy) 11 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,5 +142,10 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - kele
   - 🇮🇹 意大利 (Italy) 05 - kele
   - 🇮🇹 意大利 (Italy) 06 - kele
+  - 🇮🇹 意大利 (Italy) 07 - kele
+  - 🇮🇹 意大利 (Italy) 08 - kele
+  - 🇮🇹 意大利 (Italy) 09 - kele
+  - 🇮🇹 意大利 (Italy) 10 - kele
+  - 🇮🇹 意大利 (Italy) 11 - kele
 rules:
 - MATCH,PROXIES
