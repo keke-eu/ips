@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 TH 01 - kele
+- name: 🇷🇺 俄罗斯 (Russia) 01 - kele
   type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  server: germany.tofreedom.ru
+  port: 8444
+  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: germany.tofreedom.ru
   network: ws
   ws-opts:
-    path: /ws
+    path: /c7f5317cd04691bc
     headers:
-      Host: aIs.SpEeDtEsT.nEt
+      Host: germany.tofreedom.ru
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 TH 01 - kele
+  - 🇷🇺 俄罗斯 (Russia) 01 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 TH 01 - kele
+  - 🇷🇺 俄罗斯 (Russia) 01 - kele
 rules:
 - MATCH,PROXIES

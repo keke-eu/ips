@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 BE 01 - kele"
+        "🇧🇾 BY 01 - kele",
+        "🇧🇾 BY 02 - kele",
+        "🇧🇾 BY 03 - kele",
+        "🇧🇾 BY 04 - kele",
+        "🇧🇾 BY 05 - kele",
+        "🇧🇾 BY 06 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 BE 01 - kele"
+        "🇧🇾 BY 01 - kele",
+        "🇧🇾 BY 02 - kele",
+        "🇧🇾 BY 03 - kele",
+        "🇧🇾 BY 04 - kele",
+        "🇧🇾 BY 05 - kele",
+        "🇧🇾 BY 06 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },
