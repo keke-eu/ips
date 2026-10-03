@@ -6,27 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - kele
   type: ss
-  server: 90.156.203.62
-  port: 5112
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - kele
-  type: vless
-  server: 217.19.122.200
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 03 - kele
-  type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
@@ -38,15 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - kele
-  - 🇷🇺 俄罗斯 (Russia) 02 - kele
-  - 🇷🇺 俄罗斯 (Russia) 03 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - kele
-  - 🇷🇺 俄罗斯 (Russia) 02 - kele
-  - 🇷🇺 俄罗斯 (Russia) 03 - kele
 rules:
 - MATCH,PROXIES
