@@ -29,6 +29,20 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 03 - kele
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 04 - kele
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 05 - kele
   type: vmess
   server: mygptagent.org
   port: 443
@@ -38,32 +52,25 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mygptagent.org
+  servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 04 - kele
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 05 - kele
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-  udp: true
+      Host: ''
 - name: 🇪🇸 西班牙 (Spain) 06 - kele
   type: ss
   server: 140.174.184.5
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 07 - kele
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -76,6 +83,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - kele
   - 🇪🇸 西班牙 (Spain) 05 - kele
   - 🇪🇸 西班牙 (Spain) 06 - kele
+  - 🇪🇸 西班牙 (Spain) 07 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,5 +95,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - kele
   - 🇪🇸 西班牙 (Spain) 05 - kele
   - 🇪🇸 西班牙 (Spain) 06 - kele
+  - 🇪🇸 西班牙 (Spain) 07 - kele
 rules:
 - MATCH,PROXIES
