@@ -20,7 +20,21 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 02 - kele
   type: vless
-  server: 85.90.196.11
+  server: 95.182.95.178
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇨🇿 CZ 03 - kele
+  type: vless
+  server: 212.87.220.98
   port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -39,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - kele
   - 🇨🇿 CZ 02 - kele
+  - 🇨🇿 CZ 03 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - kele
   - 🇨🇿 CZ 02 - kele
+  - 🇨🇿 CZ 03 - kele
 rules:
 - MATCH,PROXIES
