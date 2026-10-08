@@ -17,6 +17,36 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - kele
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 03 - kele
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 04 - kele
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -28,7 +58,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - kele
+- name: 🇮🇳 印度 (India) 05 - kele
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -40,7 +70,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 04 - kele
+- name: 🇮🇳 印度 (India) 06 - kele
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -61,6 +91,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - kele
   - 🇮🇳 印度 (India) 03 - kele
   - 🇮🇳 印度 (India) 04 - kele
+  - 🇮🇳 印度 (India) 05 - kele
+  - 🇮🇳 印度 (India) 06 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,5 +102,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - kele
   - 🇮🇳 印度 (India) 03 - kele
   - 🇮🇳 印度 (India) 04 - kele
+  - 🇮🇳 印度 (India) 05 - kele
+  - 🇮🇳 印度 (India) 06 - kele
 rules:
 - MATCH,PROXIES
