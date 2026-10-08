@@ -6,12 +6,96 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - kele
   type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 02 - kele
+  type: vless
+  server: 104.21.0.87
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 03 - kele
+  type: vless
+  server: 104.16.10.135
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 04 - kele
+  type: vless
+  server: 104.16.10.104
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 05 - kele
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 06 - kele
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 07 - kele
+  type: vless
+  server: 172.67.213.168
+  port: 443
+  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jeffsubs.com
+  network: ws
+  ws-opts:
+    path: /nnuyws
+    headers:
+      Host: jeffsubs.com
+- name: 🇯🇵 日本 (Japan) 08 - kele
+  type: ss
   server: 84.247.155.196
   port: 443
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 02 - kele
+- name: 🇯🇵 日本 (Japan) 09 - kele
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -25,17 +109,10 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 03 - kele
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 04 - kele
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 10 - kele
   type: vless
-  server: 172.67.156.147
+  server: 104.16.10.185
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -47,7 +124,21 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 05 - kele
+- name: 🇯🇵 日本 (Japan) 11 - kele
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 12 - kele
   type: vmess
   server: 140.238.55.84
   port: 2083
@@ -63,71 +154,7 @@ proxies:
     path: /or3
     headers:
       Host: 140.238.55.84
-- name: 🇯🇵 日本 (Japan) 06 - kele
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 07 - kele
-  type: vless
-  server: 104.25.251.68
-  port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp-osa.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-- name: 🇯🇵 日本 (Japan) 08 - kele
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 09 - kele
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10 - kele
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 11 - kele
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 12 - kele
+- name: 🇯🇵 日本 (Japan) 13 - kele
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -142,16 +169,17 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 13 - kele
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: 🇯🇵 日本 (Japan) 14 - kele
   type: vless
-  server: 104.16.10.104
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 15 - kele
+  type: vless
+  server: 104.24.31.89
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -163,48 +191,22 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 15 - kele
-  type: vless
-  server: 104.17.107.254
-  port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp-osa.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
 - name: 🇯🇵 日本 (Japan) 16 - kele
   type: vless
-  server: 104.20.53.189
+  server: 137.220.221.179
   port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp-osa.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
 - name: 🇯🇵 日本 (Japan) 17 - kele
   type: vless
-  server: 188.114.97.6
+  server: 137.220.221.179
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---bored_vpn
-    headers:
-      Host: lucasjow.us.ci
 - name: 🇯🇵 日本 (Japan) 18 - kele
   type: vmess
   server: 168.138.43.75
@@ -219,37 +221,92 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 168.138.43.75
+      Host: ''
 - name: 🇯🇵 日本 (Japan) 19 - kele
   type: vless
-  server: 104.17.119.121
+  server: 104.21.16.152
   port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp-osa.862400.xyz
+  servername: jeffsubs.com
   network: ws
   ws-opts:
-    path: /announcement?ed=2048
+    path: /nnuyws
     headers:
-      Host: jp-osa.862400.xyz
+      Host: jeffsubs.com
 - name: 🇯🇵 日本 (Japan) 20 - kele
   type: vless
-  server: 137.220.221.179
+  server: 162.159.254.3
   port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 21 - kele
-  type: ss
-  server: 149.22.87.204
+  type: vless
+  server: 172.67.156.147
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 22 - kele
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 23 - kele
+  type: vless
+  server: 104.21.34.106
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 24 - kele
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 25 - kele
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -263,54 +320,24 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 23 - kele
-  type: vless
-  server: 104.17.159.6
-  port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp-osa.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-- name: 🇯🇵 日本 (Japan) 24 - kele
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 25 - kele
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: none
 - name: 🇯🇵 日本 (Japan) 26 - kele
   type: vless
-  server: 104.17.146.66
+  server: 172.67.217.240
   port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp-osa.862400.xyz
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /announcement?ed=2048
+    path: /tyxyws
     headers:
-      Host: jp-osa.862400.xyz
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 27 - kele
   type: vless
-  server: 104.21.33.59
+  server: 104.16.10.104
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -324,33 +351,41 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 28 - kele
   type: vless
-  server: 104.17.145.110
+  server: 188.114.97.6
   port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp-osa.862400.xyz
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /announcement?ed=2048
+    path: /tyxyws
     headers:
-      Host: jp-osa.862400.xyz
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 29 - kele
-  type: vless
-  server: 104.17.108.119
+  type: ss
+  server: 149.22.87.240
   port: 443
-  uuid: f57dfd20-fdf4-4967-9599-aca8433ebd5c
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
+- name: 🇯🇵 日本 (Japan) 30 - kele
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: jp-osa.862400.xyz
   network: ws
   ws-opts:
-    path: /announcement?ed=2048
+    path: /cctv13.m3u8
     headers:
-      Host: jp-osa.862400.xyz
-- name: 🇯🇵 日本 (Japan) 30 - kele
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 31 - kele
   type: vless
   server: 137.220.221.179
   port: 443
@@ -393,6 +428,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 28 - kele
   - 🇯🇵 日本 (Japan) 29 - kele
   - 🇯🇵 日本 (Japan) 30 - kele
+  - 🇯🇵 日本 (Japan) 31 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -428,5 +464,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 28 - kele
   - 🇯🇵 日本 (Japan) 29 - kele
   - 🇯🇵 日本 (Japan) 30 - kele
+  - 🇯🇵 日本 (Japan) 31 - kele
 rules:
 - MATCH,PROXIES
