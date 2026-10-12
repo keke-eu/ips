@@ -12,20 +12,6 @@ proxies:
   password: GayYa2V7pUbJBfKu
   udp: true
 - name: 🇮🇪 IE 02 - kele
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
-- name: 🇮🇪 IE 03 - kele
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
-- name: 🇮🇪 IE 04 - kele
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -46,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - kele
   - 🇮🇪 IE 02 - kele
-  - 🇮🇪 IE 03 - kele
-  - 🇮🇪 IE 04 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - kele
   - 🇮🇪 IE 02 - kele
-  - 🇮🇪 IE 03 - kele
-  - 🇮🇪 IE 04 - kele
 rules:
 - MATCH,PROXIES
