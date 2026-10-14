@@ -20,18 +20,17 @@ proxies:
       Host: az_man-eski_naro_Pesar_jOon.global.ssl.fastly.net.
 - name: 🇫🇮 FI 02 - kele
   type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: c0331b33-4a3a-4320-bacb-78601f9795bd
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: google.com
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: az_man-eski_naro_Pesar_jOon.global.ssl.fastly.net.
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - kele
   type: vless
   server: edge10.cyrionflare.com
@@ -79,14 +78,6 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 FI 07 - kele
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 08 - kele
   type: ss
   server: 185.103.110.68
   port: 18283
@@ -105,7 +96,6 @@ proxy-groups:
   - 🇫🇮 FI 05 - kele
   - 🇫🇮 FI 06 - kele
   - 🇫🇮 FI 07 - kele
-  - 🇫🇮 FI 08 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -118,6 +108,5 @@ proxy-groups:
   - 🇫🇮 FI 05 - kele
   - 🇫🇮 FI 06 - kele
   - 🇫🇮 FI 07 - kele
-  - 🇫🇮 FI 08 - kele
 rules:
 - MATCH,PROXIES
