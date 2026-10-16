@@ -5,314 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - kele
-  type: vless
-  server: 47.237.74.17
-  port: 16263
-  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 02 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 03 - kele
-  type: vless
-  server: 139.162.27.96
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 04 - kele
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 05 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 06 - kele
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 07 - kele
-  type: vless
-  server: 45.118.133.249
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 08 - kele
-  type: vless
-  server: 172.64.150.43
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 09 - kele
-  type: vless
-  server: 104.16.10.233
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 10 - kele
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - kele
-  type: vless
-  server: 511.150333.xyz
-  port: 21003
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 12 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 13 - kele
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 14 - kele
-  type: vless
-  server: 511.150333.xyz
-  port: 21002
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 15 - kele
-  type: vless
-  server: 172.67.71.187
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 16 - kele
-  type: vless
-  server: 104.19.164.25
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 17 - kele
-  type: vless
-  server: 45.38.60.153
-  port: 2053
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇸🇬 新加坡 (Singapore) 18 - kele
-  type: vless
-  server: 43.174.193.1
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇸🇬 新加坡 (Singapore) 19 - kele
-  type: vless
-  server: 104.17.162.11
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 20 - kele
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 21 - kele
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 22 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 23 - kele
-  type: vless
-  server: 141.193.213.20
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 24 - kele
-  type: vless
-  server: 45.118.133.249
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 25 - kele
-  type: vless
-  server: 511.150333.xyz
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 26 - kele
-  type: ss
-  server: 129.150.59.74
-  port: 14384
-  cipher: 2022-blake3-aes-256-gcm
-  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 27 - kele
   type: vless
   server: 104.16.156.227
   port: 443
@@ -326,7 +28,7 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 28 - kele
+- name: 🇸🇬 新加坡 (Singapore) 03 - kele
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -336,7 +38,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 29 - kele
+- name: 🇸🇬 新加坡 (Singapore) 04 - kele
   type: vless
   server: 141.193.213.21
   port: 8443
@@ -350,9 +52,91 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 30 - kele
+- name: 🇸🇬 新加坡 (Singapore) 05 - kele
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 06 - kele
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 07 - kele
   type: vless
-  server: 104.16.10.10
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 08 - kele
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 09 - kele
+  type: vless
+  server: 139.162.27.96
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 10 - kele
+  type: vless
+  server: 45.118.133.249
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 11 - kele
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 12 - kele
+  type: vless
+  server: 104.21.5.75
   port: 443
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
@@ -364,10 +148,10 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 31 - kele
+- name: 🇸🇬 新加坡 (Singapore) 13 - kele
   type: vless
   server: 511.150333.xyz
-  port: 21002
+  port: 21004
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -376,17 +160,19 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 32 - kele
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 14 - kele
+  type: vless
+  server: 511.150333.xyz
+  port: 21001
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 33 - kele
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 15 - kele
   type: vless
   server: 188.114.97.6
   port: 443
@@ -400,7 +186,20 @@ proxies:
     path: /
     headers:
       Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 34 - kele
+- name: 🇸🇬 新加坡 (Singapore) 16 - kele
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 17 - kele
   type: vless
   server: 141.193.213.20
   port: 8443
@@ -414,9 +213,9 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 35 - kele
+- name: 🇸🇬 新加坡 (Singapore) 18 - kele
   type: vless
-  server: 104.16.10.235
+  server: 104.19.178.244
   port: 443
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
@@ -428,7 +227,72 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 36 - kele
+- name: 🇸🇬 新加坡 (Singapore) 19 - kele
+  type: vless
+  server: 45.118.133.249
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 20 - kele
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 21 - kele
+  type: vless
+  server: 141.193.213.21
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 22 - kele
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 23 - kele
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 24 - kele
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -438,10 +302,154 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 37 - kele
+- name: 🇸🇬 新加坡 (Singapore) 25 - kele
+  type: vless
+  server: 141.193.213.20
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 26 - kele
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 27 - kele
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 28 - kele
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 29 - kele
+  type: vless
+  server: 104.17.162.11
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 30 - kele
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 31 - kele
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 32 - kele
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 33 - kele
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 34 - kele
+  type: vless
+  server: 104.16.10.233
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 35 - kele
+  type: vless
+  server: 511.150333.xyz
+  port: 21002
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 36 - kele
   type: vless
   server: 511.150333.xyz
   port: 21001
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 37 - kele
+  type: vless
+  server: 511.150333.xyz
+  port: 21002
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -466,69 +474,47 @@ proxies:
       Host: u.srilankangrill.online
 - name: 🇸🇬 新加坡 (Singapore) 39 - kele
   type: vless
-  server: 104.21.5.75
+  server: free.nadun.store
   port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: u.srilankangrill.online
+  servername: free.nadun.store
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: u.srilankangrill.online
+      Host: free.nadun.store
 - name: 🇸🇬 新加坡 (Singapore) 40 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
 - name: 🇸🇬 新加坡 (Singapore) 41 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 43.174.193.1
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇸🇬 新加坡 (Singapore) 42 - kele
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 43 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 44 - kele
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 45 - kele
   type: vless
   server: 511.150333.xyz
   port: 21004
@@ -540,9 +526,29 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 46 - kele
+- name: 🇸🇬 新加坡 (Singapore) 43 - kele
+  type: vless
+  server: 47.237.74.17
+  port: 16263
+  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 44 - kele
+  type: vless
+  server: 511.150333.xyz
+  port: 21003
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 45 - kele
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -550,7 +556,34 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 46 - kele
+  type: vless
+  server: 172.64.150.43
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🇸🇬 新加坡 (Singapore) 47 - kele
+  type: vless
+  server: 104.16.10.10
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 48 - kele
   type: vless
   server: free.nadun.store
   port: 443
@@ -564,18 +597,6 @@ proxies:
     path: /
     headers:
       Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 48 - kele
-  type: vless
-  server: 511.150333.xyz
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 49 - kele
   type: vless
   server: 139.162.27.96
@@ -591,93 +612,16 @@ proxies:
     headers:
       Host: free-server.techsonic.dev
 - name: 🇸🇬 新加坡 (Singapore) 50 - kele
-  type: vless
-  server: 104.18.35.86
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🇸🇬 新加坡 (Singapore) 51 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 52 - kele
-  type: vless
-  server: 104.16.10.199
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 53 - kele
-  type: vless
-  server: 141.193.213.21
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 54 - kele
-  type: vless
-  server: 104.19.178.244
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 55 - kele
-  type: vless
-  server: 511.150333.xyz
-  port: 21003
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 56 - kele
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 57 - kele
   type: vless
   server: free.nadun.store
   port: 443
@@ -691,10 +635,100 @@ proxies:
     path: /
     headers:
       Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 52 - kele
+  type: vless
+  server: 47.237.74.17
+  port: 16263
+  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 53 - kele
+  type: vless
+  server: 104.16.10.199
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 54 - kele
+  type: vless
+  server: 104.16.10.235
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 55 - kele
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 56 - kele
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 57 - kele
+  type: vless
+  server: 45.118.133.249
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
 - name: 🇸🇬 新加坡 (Singapore) 58 - kele
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 59 - kele
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 60 - kele
   type: vless
   server: 511.150333.xyz
-  port: 21001
+  port: 21003
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -703,6 +737,30 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 61 - kele
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 62 - kele
+  type: vless
+  server: 45.38.60.153
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucasjow.us.ci
 proxy-groups:
 - name: PROXIES
   type: select
@@ -766,6 +824,10 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 56 - kele
   - 🇸🇬 新加坡 (Singapore) 57 - kele
   - 🇸🇬 新加坡 (Singapore) 58 - kele
+  - 🇸🇬 新加坡 (Singapore) 59 - kele
+  - 🇸🇬 新加坡 (Singapore) 60 - kele
+  - 🇸🇬 新加坡 (Singapore) 61 - kele
+  - 🇸🇬 新加坡 (Singapore) 62 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -829,5 +891,9 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 56 - kele
   - 🇸🇬 新加坡 (Singapore) 57 - kele
   - 🇸🇬 新加坡 (Singapore) 58 - kele
+  - 🇸🇬 新加坡 (Singapore) 59 - kele
+  - 🇸🇬 新加坡 (Singapore) 60 - kele
+  - 🇸🇬 新加坡 (Singapore) 61 - kele
+  - 🇸🇬 新加坡 (Singapore) 62 - kele
 rules:
 - MATCH,PROXIES
