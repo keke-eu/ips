@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - kele
-  type: ss
-  server: pphfree2.mvpnpvpn.de5.net
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
-  udp: true
-- name: 🇹🇭 TH 02 - kele
-  type: ss
-  server: 103.107.52.106
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
-  udp: true
-- name: 🇹🇭 TH 03 - kele
   type: vless
   server: v2ray.simspeedup.com
   port: 80
@@ -31,20 +17,39 @@ proxies:
     path: /ws
     headers:
       Host: ais.speedtest.net
-- name: 🇹🇭 TH 04 - kele
+- name: 🇹🇭 TH 02 - kele
+  type: ss
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  udp: true
+- name: 🇹🇭 TH 03 - kele
   type: vless
-  server: 104.16.10.2
-  port: 443
+  server: support.zoom.us.v2ray.simspeedup.com
+  port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
+      Host: support.zoom.us.v2ray.simspeedup.com
+- name: 🇹🇭 TH 04 - kele
+  type: vless
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
 - name: 🇹🇭 TH 05 - kele
   type: vless
   server: v2ray.simspeedup.com
@@ -57,81 +62,14 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 06 - kele
-  type: vless
-  server: 104.16.111.193
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 07 - kele
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
       Host: ais.speedtest.net
-- name: 🇹🇭 TH 08 - kele
+- name: 🇹🇭 TH 06 - kele
   type: ss
-  server: pphfree2.mvpnpvpn.de5.net
+  server: 103.107.52.106
   port: 52351
   cipher: aes-256-gcm
   password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
   udp: true
-- name: 🇹🇭 TH 09 - kele
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 10 - kele
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 11 - kele
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -143,11 +81,6 @@ proxy-groups:
   - 🇹🇭 TH 04 - kele
   - 🇹🇭 TH 05 - kele
   - 🇹🇭 TH 06 - kele
-  - 🇹🇭 TH 07 - kele
-  - 🇹🇭 TH 08 - kele
-  - 🇹🇭 TH 09 - kele
-  - 🇹🇭 TH 10 - kele
-  - 🇹🇭 TH 11 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -159,10 +92,5 @@ proxy-groups:
   - 🇹🇭 TH 04 - kele
   - 🇹🇭 TH 05 - kele
   - 🇹🇭 TH 06 - kele
-  - 🇹🇭 TH 07 - kele
-  - 🇹🇭 TH 08 - kele
-  - 🇹🇭 TH 09 - kele
-  - 🇹🇭 TH 10 - kele
-  - 🇹🇭 TH 11 - kele
 rules:
 - MATCH,PROXIES
