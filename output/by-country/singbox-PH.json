@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇵🇭 PH 01 - kele",
+        "🇵🇭 PH 02 - kele",
+        "🇵🇭 PH 03 - kele",
+        "🇵🇭 PH 04 - kele",
+        "🇵🇭 PH 05 - kele",
+        "🇵🇭 PH 06 - kele",
+        "🇵🇭 PH 07 - kele",
+        "🇵🇭 PH 08 - kele",
+        "🇵🇭 PH 09 - kele",
+        "🇵🇭 PH 10 - kele",
+        "🇵🇭 PH 11 - kele"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇵🇭 PH 01 - kele",
+        "🇵🇭 PH 02 - kele",
+        "🇵🇭 PH 03 - kele",
+        "🇵🇭 PH 04 - kele",
+        "🇵🇭 PH 05 - kele",
+        "🇵🇭 PH 06 - kele",
+        "🇵🇭 PH 07 - kele",
+        "🇵🇭 PH 08 - kele",
+        "🇵🇭 PH 09 - kele",
+        "🇵🇭 PH 10 - kele",
+        "🇵🇭 PH 11 - kele"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
