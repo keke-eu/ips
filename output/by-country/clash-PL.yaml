@@ -6,45 +6,14 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - kele
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - kele
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 03 - kele
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 04 - kele
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 05 - kele
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 06 - kele
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -53,6 +22,43 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
+- name: 🇵🇱 PL 03 - kele
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 04 - kele
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 05 - kele
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 06 - kele
+  type: vmess
+  server: 45.144.48.32
+  port: 57072
+  uuid: d8f45bbb-e84d-4ad5-aa63-970f1345b164
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇵🇱 PL 07 - kele
   type: vless
   server: edge10.cyrionflare.com
@@ -63,31 +69,28 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 08 - kele
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 09 - kele
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 10 - kele
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 11 - kele
   type: vless
   server: 2.26.6.1
@@ -98,10 +101,12 @@ proxies:
   skip-cert-verify: true
   servername: 2.26.6.1
 - name: 🇵🇱 PL 12 - kele
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  type: vmess
+  server: 45.144.48.32
+  port: 57072
+  uuid: d8f45bbb-e84d-4ad5-aa63-970f1345b164
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -110,6 +115,14 @@ proxies:
   server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 14 - kele
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
@@ -131,6 +144,7 @@ proxy-groups:
   - 🇵🇱 PL 11 - kele
   - 🇵🇱 PL 12 - kele
   - 🇵🇱 PL 13 - kele
+  - 🇵🇱 PL 14 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -149,5 +163,6 @@ proxy-groups:
   - 🇵🇱 PL 11 - kele
   - 🇵🇱 PL 12 - kele
   - 🇵🇱 PL 13 - kele
+  - 🇵🇱 PL 14 - kele
 rules:
 - MATCH,PROXIES
