@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 ID 01 - kele"
+        "🇮🇩 ID 01 - kele",
+        "🇮🇩 ID 02 - kele",
+        "🇮🇩 ID 03 - kele",
+        "🇮🇩 ID 04 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 ID 01 - kele"
+        "🇮🇩 ID 01 - kele",
+        "🇮🇩 ID 02 - kele",
+        "🇮🇩 ID 03 - kele",
+        "🇮🇩 ID 04 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },
