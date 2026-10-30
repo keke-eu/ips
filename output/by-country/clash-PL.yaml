@@ -6,38 +6,21 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - kele
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - kele
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 03 - kele
-  type: ss
-  server: pol.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-  udp: true
-- name: 🇵🇱 PL 04 - kele
-  type: vless
-  server: edge10.cyrionflare.com
+  server: 168.222.43.53
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 05 - kele
+- name: 🇵🇱 PL 03 - kele
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -45,6 +28,23 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇵🇱 PL 04 - kele
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 05 - kele
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 06 - kele
   type: vless
   server: site.teslamotor.site
@@ -55,13 +55,29 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 07 - kele
   type: vless
-  server: site.teslamotor.site
+  server: 155.117.5.208
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 08 - kele
+  type: vless
+  server: 168.222.43.53
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 09 - kele
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 10 - kele
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -70,25 +86,9 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 09 - kele
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 10 - kele
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇵🇱 PL 11 - kele
   type: vless
-  server: 155.117.5.208
+  server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
@@ -96,28 +96,22 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 12 - kele
   type: vless
-  server: 168.222.43.53
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 13 - kele
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇵🇱 PL 14 - kele
-  type: vless
-  server: 168.222.43.53
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -136,7 +130,6 @@ proxy-groups:
   - 🇵🇱 PL 11 - kele
   - 🇵🇱 PL 12 - kele
   - 🇵🇱 PL 13 - kele
-  - 🇵🇱 PL 14 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -155,6 +148,5 @@ proxy-groups:
   - 🇵🇱 PL 11 - kele
   - 🇵🇱 PL 12 - kele
   - 🇵🇱 PL 13 - kele
-  - 🇵🇱 PL 14 - kele
 rules:
 - MATCH,PROXIES
