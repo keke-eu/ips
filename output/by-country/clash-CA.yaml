@@ -5,28 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - kele
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 02 - kele
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 02 - kele
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 03 - kele
   type: ss
-  server: 51.79.49.116
-  port: 8882
+  server: 51.79.85.185
+  port: 8118
   cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  password: cdBIDV42DCwnfIN
   udp: true
 - name: 🇨🇦 加拿大 (Canada) 04 - kele
   type: vless
@@ -39,8 +46,18 @@ proxies:
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇨🇦 加拿大 (Canada) 05 - kele
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 06 - kele
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -50,18 +67,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 06 - kele
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 07 - kele
   type: vmess
   server: 23.162.200.198
@@ -73,12 +78,10 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 08 - kele
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   udp: true
   tls: false
   skip-cert-verify: true
@@ -103,15 +106,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 11 - kele
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 12 - kele
   type: vmess
   server: 134.195.196.211
@@ -123,13 +123,26 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 13 - kele
-  type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 14 - kele
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 15 - kele
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -140,8 +153,8 @@ proxies:
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 15 - kele
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 16 - kele
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -151,9 +164,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 16 - kele
+- name: 🇨🇦 加拿大 (Canada) 17 - kele
+  type: vless
+  server: milo.networkforexir.site
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 18 - kele
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -161,26 +182,13 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 17 - kele
-  type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 18 - kele
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: 🇨🇦 加拿大 (Canada) 19 - kele
-  type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -196,7 +204,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 21 - kele
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -205,31 +213,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 22 - kele
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 23 - kele
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 24 - kele
-  type: vless
-  server: 178.83.45.226
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 25 - kele
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -239,15 +222,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 26 - kele
-  type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 27 - kele
+- name: 🇨🇦 加拿大 (Canada) 23 - kele
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -259,13 +234,49 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 28 - kele
+- name: 🇨🇦 加拿大 (Canada) 24 - kele
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 25 - kele
   type: vmess
   server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 26 - kele
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 27 - kele
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 28 - kele
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   udp: true
   tls: false
   skip-cert-verify: true
@@ -281,21 +292,19 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 30 - kele
   type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 31 - kele
-  type: vless
-  server: 168.222.43.53
+  server: milo.rubinaz.xyz
   port: 8080
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 31 - kele
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -311,7 +320,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 33 - kele
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -321,7 +330,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 34 - kele
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -331,20 +340,23 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 35 - kele
   type: vless
-  server: 168.222.43.53
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 36 - kele
-  type: vless
-  server: milo.networkforexir.site
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  type: ss
+  server: 51.222.136.236
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 37 - kele
   type: vmess
   server: 134.195.196.211
@@ -357,17 +369,38 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 38 - kele
   type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  server: 178.83.45.226
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: random
 - name: 🇨🇦 加拿大 (Canada) 39 - kele
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 40 - kele
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 41 - kele
+  type: vless
+  server: 168.222.43.53
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 42 - kele
   type: vless
   server: 148.113.196.75
   port: 8443
@@ -381,43 +414,7 @@ proxies:
     path: /vless/
     headers:
       Host: 148.113.196.75
-- name: 🇨🇦 加拿大 (Canada) 40 - kele
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 41 - kele
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 42 - kele
-  type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 43 - kele
-  type: vless
-  server: milo.networkforexir.site
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 44 - kele
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -427,13 +424,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 45 - kele
+- name: 🇨🇦 加拿大 (Canada) 44 - kele
   type: vmess
   server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 45 - kele
+  type: vless
+  server: 168.222.43.53
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   udp: true
   tls: false
   skip-cert-verify: true
@@ -448,40 +453,39 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 47 - kele
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 51.79.49.116
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 48 - kele
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 49 - kele
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 50 - kele
   type: vless
   server: milo.networkforexir.site
   port: 8080
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 49 - kele
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 50 - kele
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -496,10 +500,10 @@ proxies:
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 52 - kele
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -508,6 +512,16 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 53 - kele
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 54 - kele
   type: vmess
   server: www.windowsmsidownloads.com
   port: 443
@@ -523,38 +537,32 @@ proxies:
     path: /truth
     headers:
       Host: www.windowsmsidownloads.com
-- name: 🇨🇦 加拿大 (Canada) 54 - kele
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 55 - kele
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 56 - kele
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 57 - kele
+  type: vless
+  server: milo.networkforexir.site
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -616,6 +624,7 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 54 - kele
   - 🇨🇦 加拿大 (Canada) 55 - kele
   - 🇨🇦 加拿大 (Canada) 56 - kele
+  - 🇨🇦 加拿大 (Canada) 57 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -677,5 +686,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 54 - kele
   - 🇨🇦 加拿大 (Canada) 55 - kele
   - 🇨🇦 加拿大 (Canada) 56 - kele
+  - 🇨🇦 加拿大 (Canada) 57 - kele
 rules:
 - MATCH,PROXIES
