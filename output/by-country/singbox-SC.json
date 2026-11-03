@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - kele"
+        "🇸🇨 SC 01 - kele",
+        "🇸🇨 SC 02 - kele",
+        "🇸🇨 SC 03 - kele",
+        "🇸🇨 SC 04 - kele",
+        "🇸🇨 SC 05 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - kele"
+        "🇸🇨 SC 01 - kele",
+        "🇸🇨 SC 02 - kele",
+        "🇸🇨 SC 03 - kele",
+        "🇸🇨 SC 04 - kele",
+        "🇸🇨 SC 05 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },
