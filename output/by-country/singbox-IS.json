@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - kele"
+        "🇮🇸 IS 01 - kele",
+        "🇮🇸 IS 02 - kele",
+        "🇮🇸 IS 03 - kele"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - kele"
+        "🇮🇸 IS 01 - kele",
+        "🇮🇸 IS 02 - kele",
+        "🇮🇸 IS 03 - kele"
       ],
       "url": "https://www.google.com/generate_204"
     },
