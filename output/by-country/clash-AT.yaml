@@ -33,6 +33,17 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇦🇹 AT 04 - kele
+  type: vmess
+  server: 154.47.19.225
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇦🇹 AT 05 - kele
   type: ss
   server: 152.53.1.57
   port: 8388
@@ -48,6 +59,7 @@ proxy-groups:
   - 🇦🇹 AT 02 - kele
   - 🇦🇹 AT 03 - kele
   - 🇦🇹 AT 04 - kele
+  - 🇦🇹 AT 05 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,5 +69,6 @@ proxy-groups:
   - 🇦🇹 AT 02 - kele
   - 🇦🇹 AT 03 - kele
   - 🇦🇹 AT 04 - kele
+  - 🇦🇹 AT 05 - kele
 rules:
 - MATCH,PROXIES
