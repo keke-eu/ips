@@ -5,6 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - kele
+  type: vmess
+  server: Ir.wbzo.ir
+  port: 2080
+  uuid: b7e3e8af-d1ca-45da-a95f-8b9ad77398b1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇷 IR 02 - kele
+  type: vmess
+  server: Ir.wbzo.ir
+  port: 2080
+  uuid: b7e3e8af-d1ca-45da-a95f-8b9ad77398b1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇷 IR 03 - kele
   type: vless
   server: ns2.irts.lol
   port: 443
@@ -19,11 +39,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇷 IR 01 - kele
+  - 🇮🇷 IR 02 - kele
+  - 🇮🇷 IR 03 - kele
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇷 IR 01 - kele
+  - 🇮🇷 IR 02 - kele
+  - 🇮🇷 IR 03 - kele
 rules:
 - MATCH,PROXIES
